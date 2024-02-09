@@ -10,5 +10,5 @@ jobs:
       - name: curl
         shell: bash
         run: |
-          sudo apt-get install -y curl
+          sudo apt-get update && sudo apt-get install -y curl
           $(which curl) -kv https://artifacts.rackspace.net/artifactory/signup-maven-local/
