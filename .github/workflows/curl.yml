@@ -1,0 +1,12 @@
+name: curl
+
+on:
+  workflow_dispatch:
+
+jobs:
+  curl-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: curl
+        shell: bash
+        run: curl -kv https://artifacts.rackspace.net/artifactory/signup-maven-local/
