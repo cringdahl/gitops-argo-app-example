@@ -9,4 +9,4 @@ jobs:
     steps:
       - name: curl
         shell: bash
-        run: curl -kv https://artifacts.rackspace.net/artifactory/signup-maven-local/
+        run: $(which curl) -kv https://artifacts.rackspace.net/artifactory/signup-maven-local/
