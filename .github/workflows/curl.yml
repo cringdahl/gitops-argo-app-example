@@ -9,4 +9,6 @@ jobs:
     steps:
       - name: curl
         shell: bash
-        run: $(which curl) -kv https://artifacts.rackspace.net/artifactory/signup-maven-local/
+        run: |
+          apt-get install -y curl
+          $(which curl) -kv https://artifacts.rackspace.net/artifactory/signup-maven-local/
